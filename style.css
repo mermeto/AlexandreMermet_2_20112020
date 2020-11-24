@@ -251,7 +251,11 @@ button:focus {
     padding: 0px;
     padding-left: 16px;
 }
-.read_more {
+#hebergements a {
     display: flex;
     font-weight: bold;
+    text-decoration: none;
+    color: black;
+    margin-top: 30px;
+    font-size: 16px;
 }
