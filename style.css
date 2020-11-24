@@ -98,29 +98,160 @@ button:focus {
 }
 
 .all_filters .fas {
-    
-    color: #0065FC;
-    background-color:#DEEBFF ;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     height: 50px;
     width: 50px;
-    border-radius: 25px;;
-    margin-right: 20px;
+    border-radius: 25px;
+    border: solid #DEEBFF;
+    background-color: #DEEBFF;
+    margin-right: 13px;
+    color: #0065FC;
 }
- 
 #economic, #family, #love, #pets {
-    margin-right: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 22px;
     border: solid 2px #F2F2F2;
-    border-radius: 35px;
-    width: 220px;
+    border-radius: 25px;
     font-family: 'Raleway', arial;
-    
+    height: 50px;
+    padding-right: 22px;
 }
-
 .all_filters a {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
+#filters {
+    margin-top: 31px;
+}
+#filters, .all_filters {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+#filters h2 {
+    margin-right: 32px;
+}
+.economic:hover, .pets:hover, .family:hover, .lova:hover{
+    background-color:  #0065FC;
+    color: white;
+}
 
+.all_filters a:hover {
+    color: #0065FC;
+    font-weight: bold;
+}
+#info {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#info .fas {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    color: #0065FC;
+    border: solid #F2F2F2;
+    height: 20px;
+    width: 20px;
+    border-radius: 25px;
+}
 
+/*********** SECTION PRINCIPALE ***********/
 
+#cards {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-left: 40px;
+    height: 590px;
+    width: 880px;
+}
+
+#hebergements {
+    display: flex;
+    flex-wrap: wrap;
+}
+#hebergements img {
+    width: 235px;
+    height: 114px;
+    border-radius: 20px 20px 0px 0px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.offre1 {
+    background-color: #fff;
+    border-radius: 20px;
+    height: 200px;
+    width: 245px;
+    margin-right: 36px;
+}
+.offre2 {
+    background-color: #fff;
+    border-radius: 20px;
+    height: 200px;
+    width: 245px;
+    margin-right: 36px;
+}
+.offre3 {
+    background-color: #fff;
+    border-radius: 20px;
+    height: 200px;
+    width: 245px;
+    margin-right: 36px;
+}
+.offre4 {
+    background-color: #fff;
+    border-radius: 20px;
+    height: 200px;
+    width: 245px;
+    margin-right: 36px;
+    margin-top: 30px;
+}
+.offre5 {
+    background-color: #fff;
+    border-radius: 20px;
+    height: 200px;
+    width: 245px;
+    margin-right: 36px;
+    margin-top: 30px;
+}
+.offre6 {
+    background-color: #fff;
+    border-radius: 20px;
+    height: 200px;
+    width: 245px;
+    margin-right: 36px;
+    margin-top: 30px;
+}
+#hebergements h3 {
+    font-size: 16px;
+}
+#hebergements p {
+    font-size: 14px;
+}
+#hebergements .fas {
+    color: #0065FC;
+    font-size: 12px;
+}
+#hebergements .far {
+    color: #F2F2F2;
+    font-size: 12px;
+}
+.stars {
+    padding-left: 16px;
+}
+#hebergements p, h3 {
+    margin: 0px;
+    padding: 0px;
+    padding-left: 16px;
+}
+.read_more {
+    display: flex;
+    font-weight: bold;
+}
