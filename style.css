@@ -1,3 +1,126 @@
 body {
     font-family: 'Raleway', arial;
+    margin-left: 50px;
 } 
+
+/************ FOOTER ************/
+
+header img {
+    width: 90px;
+    margin-top: 25px;
+}
+
+#header_activity {
+    width: 30%;
+    display: flex;
+    margin-left: 1250px;
+    margin-top: -40px;
+    justify-content: space-around;
+}
+#header_activity a {
+    text-decoration: none;
+    color: #0065FC;
+}
+
+#header_activity a:hover {
+    color: #0049b6;
+    border-bottom: 1px solid;
+    font-weight: bold;
+}
+.sign_in{
+    font-weight: bold;
+}
+
+/************ FILTRE & NAVBAR ************/
+
+#navbar h1 {
+    margin-top: 30px;
+    margin-bottom: 16px;;
+}
+
+/************ NAVBAR ************/
+
+.buttonIn { 
+    height: 50px;
+    width: 350px;
+    position: relative; 
+    display: flex;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding-left: 15px;
+} 
+button {
+    background-color: #0065FC;
+    color: #fff;
+    font-family: 'Raleway', arial;
+    border-radius: 0px 20px 20px 0px;
+    height: 50px;
+    width: 130px;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+input {
+    height: 50px;
+    width: 220px;
+    border: solid #F2F2F2;
+    font-weight: bold;
+    font-family: 'Raleway', arial;
+    padding-left: 10px;
+}
+#navbar i {
+    padding-top: 17px;
+    padding-right: 15px;
+    padding-left: 5px;
+    color: #0065FC ;
+}
+input:focus {
+    outline: 0;
+}
+button:focus {
+    outline: 0;
+}
+   
+::placeholder {
+    color: black;
+    opacity: 1;
+}
+/************ FILTRES ************/
+
+.all_filters {
+    display: flex;
+    align-items: center;
+    /*
+    justify-content: space-around;
+    margin-left: 140px;
+    margin-top: -42px;*/
+}
+
+.all_filters .fas {
+    
+    color: #0065FC;
+    background-color:#DEEBFF ;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;;
+    margin-right: 20px;
+}
+ 
+#economic, #family, #love, #pets {
+    margin-right: 20px;
+    border: solid 2px #F2F2F2;
+    border-radius: 35px;
+    width: 220px;
+    font-family: 'Raleway', arial;
+    
+}
+
+.all_filters a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+

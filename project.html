@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Reservia</title>
@@ -12,34 +12,38 @@
     <!--LOGO + LISTE A PUCE-->
     <header>
         <img src="C:\Users\PC-Alexandre\Desktop\PROGRA\PROJET2\Reservia\images\logo\Reservia.svg" alt="logo_reservia"></img>
-        <ul>
-            <li><a href="">Hébergements</a></li>
-            <li><a href="">Activités</a></li>
-            <li><a href="">S'inscrire</a></li>
-        </ul>
+        <div id="header_activity">
+            <div class="hebergement"><a href="#hebergements">Hébergements</a></div>
+            <div class="activity"><a href="#activity">Activités</a></div>
+            <div class="sign_in"><a href="#">S'inscrire</a></div>
+        </div>   
     </header>
-    <!--FILTRES + NAVBAR-->
-    <section id="search">
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en pleine nature</p>
-            <form>
-                <i class="fas fa-map-marker-alt"></i>
-                <input type="search"></input>
-                <button>Rechercher</button>
-            </form>
+    <!-- NAVBAR -->
+    <section id="navbar">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+        <div class="buttonIn">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="search" placeholder="Marseille, France"></input>
+            <button>Rechercher</button>
+        </div>
+    </section>
+
+    <!-- FILTERS -->
+    <section id="filters">
+        <div class="all_filters">
             <h2>Filtres</h2>
-            <ul>
-                <li><i class="fas fa-money-bill-wave-alt"></i><a href="#"></i>Economique</a></li>
-                <li><i class="fas fa-child"></i><a href="#">Familial</a></li>
-                <li><i class="fas fa-heart"></i><a href="#">Romantique</a></li>
-                <li><i class="fas fa-dog"></i><a href="#">Animaux autorisés</a></li>
-            </ul>
+            <div id="economic"><i class="fas fa-money-bill-wave-alt"></i><a href="#"></i>Economique</a></div>
+            <div id="family"><i class="fas fa-child"></i><a href="#">Familial</a></div>
+            <div id="love"><i class="fas fa-heart"></i><a href="#">Romantique</a></div>
+            <div id="pets"><i class="fas fa-dog"></i><a href="#">Animaux autorisés</a></div>
+        </div>
             <p><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
     </section>
     <!--SECTION PRINCIPALE-->
     <section id="cards">
         <article>
-            <div class="hebergements">
+            <div id="hebergements">
                 <h1>Hébergements à Marseille</h1>
                 <div>
                     <img src="C:\Users\PC-Alexandre\Desktop\PROGRA\PROJET2\Reservia\images\hebergements\4_small\auberge_la_cannebière.jpg"></img>
@@ -103,6 +107,7 @@
             </div>  
         </aside>
     </section>
+    <!--ACTIVITES-->
     <section id="activity">
         <div>
             <img src="C:\Users\PC-Alexandre\Desktop\PROGRA\PROJET2\Reservia\images\activites\4_small\vieux_port.jpg"></img>
@@ -129,6 +134,7 @@
             <h3>Parc Longchamps</h3>
         </div>
     </section>
+    <!--FOOTER-->
     <footer>
         <div class="about">
             <h3>A propos</h3>
